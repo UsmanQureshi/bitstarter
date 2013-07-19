@@ -2,106 +2,112 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>Crowd Incubater</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800"
           rel="stylesheet" type="text/css">
     <style type="text/css">
 
-      /* Large desktop */
-      @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
-        }
-       .linediv-l {
-         border-right: 1px white solid;
-        }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
+    /* Large desktop */
+    @media (min-width: 980px) {
+      body {
+        padding-top: 60px;
       }
+      .linediv-l {
+        border-right: 1px white solid;
+      }
+      .linediv-r {
+        border-left: 1px white solid;
+      }
+    }
 
-      /* Landscape phones and down */
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-      }
-
-      /* All form factors */
-
-      /* Main body and headings */
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
-
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
-
-      /* Marketing Copy and Footer */
+    /* Landscape phones and down */
+    @media (max-width: 480px) {
       .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
+        padding: 2.5% 10%;
       }
-      .asset {
-        padding: 2.5% 0%;
+      .linediv-l {
+        border-bottom: 1px white solid;
       }
-      .footer {
-        color: #cccccc;
-        text-align: center;
+      .linediv-r {
+        border-top: 1px white solid;
       }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
-      }
+    }
+
+    /* All forms factors */
+
+    /* Main body and headings */
+    body {
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+    .heading, .subheading {
+      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+    p.lead {
+      padding-top: 1.5%;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    li.grande {
+      padding-top: 1.5%;
+      font-size: 200%;
+      margin-bottom: 25px;
+     }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+
+    /* Video pitch and Action */
+    .pitch {
+      padding: 2.5% 0%;
+    }
+    .order {
+      padding: 2% 0%;
+    }
+    .actions {
+      background-color: #343434;
+      padding: 3% 0%;
+    }
+    .video, .thermometer, .order, .social, .statistics {
+      text-align: center;
+    }
+    .statistics h3, .statistics p {
+      color: white;
+    }
+
+    /* Marketing Copy and Footer */
+    .copy {
+      padding-top: 2.5%;
+      padding-bottom: 2.5%;
+      text-align: justify;
+    }
+    .asset {
+      padding: 2.5% 0%;
+    }
+    .footer {
+      color: #cccccc;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 11px;
+    }
+    .footer a {
+      color: #ccccff;
+    }
     </style>
   </head>
   <body>
 
-    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- Mobile-friendly navbar adopted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -124,31 +130,41 @@
       </div>
     </div>
 
-    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <!-- We use row-fluid inside containers to achive a resizable layout. -->
     <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
     <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- font and paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>Crowd Incubater</h1>
         </div>
-      </div> 
+      </div>
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead">The Crowd Incubater site where crowd can genrate ideas,vote ideas for incubations. then finally fund the ideas to become real products.
+          </p>
         </div>
       </div>
       <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
+        <div class="span5 offset1">
+        <!-- div class="span5 offset1 video" -->
+          <!-- <img class="img-polaroid" src="http://placehold.it/480x300" alt="image polaroid"> -->
+             <ul>
+                <li class="grande">Register an Idea</li>
+                <li class="grande">Crowd Votes for Idea</li>
+                <li class="grande">Team Selection</li>
+                <li class="grande">Crowd Funding</li>
+                <li class="grande">Prototype</li>
+                <li class="grande">Ideas >  Reality </li>
+             </ul>
+         </div>
 
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+        <!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
         <div class="span5 actions">
           <div class="span8 offset2">
             <div class="statistics">
@@ -157,17 +173,17 @@
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                  <h3>2</h3> <p>bakers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                  <h3>$100</h3> <p>of $12,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
+                  <h3>31</h3> <p>days left</p>
                 </div>
               </div>
             </div>
@@ -176,13 +192,13 @@
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="bar bar-success" style="width: 10%;"></div>
+              <div class="bar bar-warning" style="width: 90%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+            <!-- https://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
           <div class="span8 offset2 social">
@@ -195,48 +211,26 @@
       </div>
 
       <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+      <!-- https://developers.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" src="./ventana.jpg" alt="imagen de una ventana por donde entra una nube">
         </div>
         <div class="span5 copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-      </div>
+          Crowdfunding (alternately crowd financing, equity crowdfunding, crowd-sourced fundraising) is the collective effort of individuals who network and pool their money, usually via the Internet, to support efforts initiated by other people or organizations.[1][2] Crowdfunding is used in support of a wide variety of activities, including disaster relief, citizen journalism, support of artists by fans, political campaigns, startup company funding,[3] motion picture promotion,[4] free software development, inventions development, scientific research,[5] and civic projects.[6]
+Crowdfunding can also refer to the funding of a company by selling small amounts of equity to many investors. This form of crowdfunding has recently received attention from policymakers in the United States with direct mention in the JOBS Act; legislation that allows for a wider pool of small investors with fewer restrictions.[2] While the JOBS Act awaits implementation, hybrid models, such as Mosaic Inc., are using existing securities laws to enable the public in approved states to invest directly in clean energy projects as part of a crowd.
+Crowdfunding has its origins in the concept of crowdsourcing, which is the broader concept of an individual reaching a goal by receiving and leveraging small contributions from many parties. Crowdfunding is the application of this concept to the collection of funds through small contributions from many parties in order to finance a particular project or venture.[7]
+Crowdfunding models involve a variety of participants.[8] They include the people or organizations that propose the ideas and/or projects to be funded, and the crowd of people who support the proposals. Crowdfunding is then supported by an organization (the "platform") which brings together the project initiator and the crowd.
+           </p>
+        </div> 
+     </div>
 
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+      <div class="row-fluid subheading">
+        <div class="span12">
+          <p class="lead" style="color:SteelBlue;">Freely given and freely received. Together we can make it happen.</p>
         </div>
       </div>
 
@@ -244,37 +238,26 @@
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
       <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
-                </div>
+        <div class="span10 offset1">
+          <h3>FAQ</h3>
+          <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseOne">
+                  I'm interested in this issue but how can I help?
+                </a>
               </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
-                  </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Please, click the <code>Preorder</code> button above.
                 </div>
               </div>
             </div>
+              </div>
+            </div>
           </div>
+        </div>
 
       </div>
 
@@ -283,10 +266,11 @@
       <div class="row-fluid footer">
         <div class="span12">
           <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
+            the <a href="http://creativecommons.org/licences/by-sa/3.0/">CC UQ
+                
+              </a>, whithout all the cruft that would otherwise be
+            put at the bottom of the page.
+          </p>
         </div>
       </div>
     </div>
